@@ -6,6 +6,8 @@ WORKDIR /app
 # Set environment variable
 ENV NODE_ENV production
 
+ENV MODE ''
+
 # Install app dependencies
 COPY package.json /app
 RUN npm install
@@ -17,4 +19,4 @@ COPY . /app
 EXPOSE 8080
 
 # Start
-CMD [ "node", "server.js" ]
+CMD npm run start$MODE

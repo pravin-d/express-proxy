@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start:debug": "cross-env DEBUG=express-http-proxy node server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.20.0",
+    "cross-env": "^7.0.2",
     "express": "^4.17.1",
     "express-http-proxy": "^1.6.2"
   }
